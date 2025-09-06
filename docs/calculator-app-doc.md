@@ -70,19 +70,19 @@ Estos estados están sincronizados con la interfaz mediante `useState` y `useEff
 flowchart TD
 
 subgraph Inputs[Entrada del Usuario]
-  A1[Botón Número]
-  A2[Botón Operación (+ - x ÷)]
-  A3[Botón "="]
-  A4[Botón "C" (clean)]
-  A5[Botón "+/-" (toggleSign)]
-  A6[Botón "⌫" (deleteLast)]
+  A1[Boton Numero]
+  A2[Boton Operacion (+ - x /)]
+  A3[Boton =]
+  A4[Boton C (clean)]
+  A5[Boton +/- (toggleSign)]
+  A6[Boton Borrar]
 end
 
 subgraph Estados[Estados de React]
-  S1[number → número actual]
-  S2[formula → expresión completa]
-  S3[prevNumber → subresultado]
-  S4[lastOperation → operación pendiente]
+  S1[number -> numero actual]
+  S2[formula -> expresion completa]
+  S3[prevNumber -> subresultado]
+  S4[lastOperation -> operacion pendiente]
 end
 
 subgraph Logica[Lógica de la calculadora]
