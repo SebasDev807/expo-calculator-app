@@ -71,10 +71,10 @@ flowchart TD
 
 subgraph Inputs[Entrada del Usuario]
   A1[Boton Numero]
-  A2[Boton Operacion (+ - x /)]
-  A3[Boton =]
-  A4[Boton C (clean)]
-  A5[Boton +/- (toggleSign)]
+  A2[Boton Operacion]
+  A3[Boton Igual]
+  A4[Boton C - clean]
+  A5[Boton Cambio Signo]
   A6[Boton Borrar]
 end
 
@@ -86,13 +86,13 @@ subgraph Estados[Estados de React]
 end
 
 subgraph Logica[Lógica de la calculadora]
-  L1[buildNumber()]
-  L2[setLastNumber()]
-  L3[calculateSubResult()]
-  L4[calculateResult()]
-  L5[clean()]
-  L6[toggleSign()]
-  L7[deleteLast()]
+  L1[buildNumber]
+  L2[setLastNumber]
+  L3[calculateSubResult]
+  L4[calculateResult]
+  L5[clean]
+  L6[toggleSign]
+  L7[deleteLast]
 end
 
 subgraph UI[Salida en la UI]
@@ -120,6 +120,7 @@ A6 --> L7 --> S1
 S1 --> U1
 S2 --> U2
 S3 --> U2
+
 ```
 
 ---
